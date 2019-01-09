@@ -1,5 +1,5 @@
-## Katherine (Katie) Foster
-# Computing Major at Olin College of Engineering
+# Katherine (Katie) Foster
+### Computing Major at Olin College of Engineering
 
  [Linkedin Profile](https://www.linkedin.com/in/katherine-e-foster/) 
  
