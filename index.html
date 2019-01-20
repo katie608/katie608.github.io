@@ -37,6 +37,62 @@ a {
   color: #00043d;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* For Project images */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 </style>
 </head>
 <body style="background-color:#00043d;">
@@ -49,5 +105,24 @@ a {
    <button class="btn" onclick="window.location.href = 'https://github.com/katie608';">Github</button>
    <button class="btn" onclick="window.location.href = 'mailto:kfoster@olin.edu';">Email</button>
   </p>
-
+  
+<div class="row">
+  <div class="column">
+  	<div class="container">
+    	<img src="SkeeBallPic.JPG" alt="SkeeBallPic" style="width:100%">
+          <div class="overlay">
+          	<div class="text">Skee Ball Model</div>
+           </div>
+     </div>
+  </div>
+  
+  <div class="column">
+  	<div class="container">
+    	<img src="Round1.jpg" alt="EMG" style="width:100%">
+          <div class="overlay">
+          	<div class="text">Electromyogram</div>
+           </div>
+     </div>
+  </div>
+</div>
 </body>
