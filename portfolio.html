@@ -1,0 +1,168 @@
+<!--  -->
+<head>
+<title>Portfolio</title>
+<link rel="icon" href="Favicon.JPG" type="image" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+
+ <h2>Featured Projects</h2>
+
+
+
+
+  <div class="row">
+    <!-- Aspect ratio for pictures should be square -->
+    <div class="column">
+      <a href="https://github.com/katie608/QEA_Module_2" target="_blank">
+      <div class="container">
+        <img src="scifi_histogram.jpg" alt="SciFi_Histogram" style="width:100%">
+            <div class="overlay">
+              <div class="text">
+                My project partner and I used Matlab to experiment with three different methods of classifying movie posters based off genre, specifically differentiating between Romance and Science Fiction movie posters. Our methods included simple cutoff based off average brightness of the image, using and Eigenfaces approach on an image matrix including color, and using linear regression on an image matrix including color. Click to see our github repository.
+              </div><!-- end of text div-->
+            </div>
+            <div class="text-block">
+              <h3>Classifying Movie Posters</h3>
+            </div>
+      </div>
+      </a>
+    </div>
+
+
+
+ <div class="row">
+   <!-- Aspect ratio for pictures should be square -->
+   <div class="column">
+     <a href="https://github.com/sd19spring/InteractiveVisualization-katie_and_shreya" target="_blank">
+     <div class="container">
+       <img src="InteractiveVisualization.jpg" alt="InteractiveVisualization" style="width:100%">
+           <div class="overlay">
+             <div class="text">
+               My project partner and I designed a customizable interface for interactive art in pygame, where the user moves their mouse to draw shapes. The user can choose between several different types of shapes (circles, squares, triangles, bowties, hexagons), and different color palettes. The user can also change the size of the shapes, mirror their drawing, or animate the shapes to make them fall, scroll, scatter, or bounce. Click to see our github repository.
+             </div><!-- end of text div-->
+           </div>
+           <div class="text-block">
+             <h3>Interactive Visualization Project</h3>
+           </div>
+     </div>
+     </a>
+   </div>
+
+
+
+  <div class="column">
+  	<div class="container">
+    	<img src="Lights.jpg" alt="Lights" style="width:100%">
+          <div class="overlay">
+            <div class="text">
+              I was the lighting director for my college’s Fall production of “A Gentleman’s Guide to Love and Murder” and Spring production of "Almost Maine." I designed the light cues in the weeks leading up to the show, and then programmed the light board during tech week, and ran the light board during rehearsals and the performances.
+            </div> <!-- end of text div-->
+          </div>
+          <div class="text-block">
+            <h3>Lighting Director</h3>
+          </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <a href="Poster.pdf" target="_blank">
+  	<div class="container">
+    	<img src="Round1sq.jpg" alt="EMG" style="width:100%">
+          <div class="overlay">
+            <div class="text">
+              I worked in a group of three to make an Electromyogram for the Olin First-Year class Introduction to Sensors, Instrumentation, and Measurement. An electromyogram (EMG) is a device that measures electrical muscle activity. Our EMG consisted of a circuit to amplify and filter the signal from three electrodes placed on the skin. Click to see our poster.
+            </div> <!-- end of text div-->
+          </div>
+          <div class="text-block">
+            <h3>Electromyogram</h3>
+          </div>
+    </div>
+    </a>
+  </div>
+
+
+  <div class="row">
+    <!-- Aspect ratio for pictures should be square -->
+    <div class="column">
+      <a href="https://github.com/katie608/time_gradient_background" target="_blank">
+      <div class="container">
+        <img src="gradient.jpg" alt="gradient" style="width:100%">
+            <div class="overlay">
+              <div class="text">
+                I used Javascript to make a program that makes a gradient website background based on the website visitor’s time of day. You can see the demonstration on this web page right now. Or click to see the code that makes it happen.
+              </div> <!-- end of text div-->
+            </div>
+            <div class="text-block">
+              <h3>Time-Based Website Background</h3>
+            </div>
+      </div>
+      </a>
+    </div>
+
+
+  <div class="row">
+    <!-- Aspect ratio for pictures should be square -->
+    <div class="column">
+      <a href="https://github.com/davidt315/SkeeBallModSim/blob/master/Project3Draft7.ipynb" target="_blank">
+      <div class="container">
+        <img src="SkeeBallPicsq.JPG" alt="SkeeBallPic" style="width:100%">
+            <div class="overlay">
+              <div class="text">
+                This is my final project for the Olin First-Year class called Modeling and Simulation of the Physical World. My partner and I chose to simulate a game of skee ball which includes human error. Our main question was, which ring should you aim for to maximize your points? Our model showed that aiming for the 40 ring actually earned the highest score on average, considering human error. Click for the our computational essay.
+              </div> <!-- end of text div-->
+            </div>
+            <div class="text-block">
+              <h3>Skee Ball Model</h3>
+            </div>
+      </div>
+      </a>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<body id="main" style=100%>
+
+<body onload="setBackground();">
+
+<script>
+var x = document.getElementById("main");
+function setBackground() {
+  var userTime = new Date();
+  var hour = userTime.getHours();
+  if (hour<=6 || hour>=20) {
+    // nighttime
+    x.style.background = "linear-gradient(181deg, #000000, #000547 75%)";
+  }else if (hour==7) {
+    // sunrise 1
+    x.style.background = "linear-gradient(181deg, #9DA0D0, #DEB6D0,#FFD0B3,#FFE4C4,#FFFEDE)";
+  }else if (hour==8) {
+    // sunrise 2
+    x.style.background = "linear-gradient(181deg, #000547, #8abbdb 75%)";
+  }else if (hour>8 && hour<18){
+    // daytime
+    x.style.background = "linear-gradient(181deg, #7f7fd5, #86A8E7 51%, #91EAE4 75%)";
+  }else if (hour==18) {
+    // sunset
+    x.style.background = "linear-gradient(181deg, #FE5F75, #FC9842 75%)";
+  }else if (hour==19) {
+    // dusk
+    x.style.background = "linear-gradient(181deg, #0652C5, #D4418E 75%)";
+  }else {
+    x.style.background = "darkblue";
+  }
+  setTimeout(setBackground, 6000);
+}
+</script>
+
+
+
+</body>
