@@ -36,19 +36,17 @@ p  {
 
 /*background for whole page*/
 body {
-  /* height: 1000px; */
-  height: 100%;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right: 0;
+  /* height: 100%; */
   /*background: #00043d;*/
   background: linear-gradient(141deg, #000221, #001556 51%, #003e63 75%);
 }
 
 .page1 {
-  height:100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
 }
 
 /* .page2 {
