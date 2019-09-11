@@ -15,24 +15,24 @@
   <div class="row">
     <!-- Aspect ratio for pictures should be square -->
     <div class="column">
-      <a href="https://github.com/katie608/QEA_Module_2" target="_blank">
+      <a href="AerospaceOutbrief.pdf" target="_blank">
       <div class="container">
-        <img src="scifi_histogram.jpg" alt="SciFi_Histogram" style="width:100%">
+        <img src="AerospaceThumbnail.jpg" alt="SkeeBallPic" style="width:100%">
             <div class="overlay">
-              <div class="text" style="margin-top: 3em;">
-                My project partner and I used Matlab to experiment with three different methods of classifying movie posters based off genre, specifically differentiating between Romance and Science Fiction movie posters. Our methods included simple cutoff based off average brightness of the image, using and Eigenfaces approach on an image matrix including color, and using linear regression on an image matrix including color. Click to see our github repository.
-              </div><!-- end of text div-->
+              <div class="text">
+                I was a Technical intern at The Aerospace Corporation in the Visualization and Immersive Technologies Department during the summer of 2019. I built responsive full stack web apps using technologies such as React, Redux, and MongoDB. I also worked on a team to design and build a web application for voice and text communication using WebRTC by following the engineering design process from user interviews to a final prototype.
+              </div> <!-- end of text div-->
             </div>
             <div class="text-block">
-              <h3>Classifying Movie Posters</h3>
+              <h3>Internship at The Aerospace Corporation</h3>
             </div>
       </div>
       </a>
+
     </div>
 
 
 
- <div class="row">
    <!-- Aspect ratio for pictures should be square -->
    <div class="column">
      <a href="https://github.com/sd19spring/InteractiveVisualization-katie_and_shreya" target="_blank">
@@ -53,34 +53,22 @@
 
 
   <div class="column">
-  	<div class="container">
-    	<img src="Lights.jpg" alt="Lights" style="width:100%">
+    <a href="https://github.com/katie608/QEA_Module_2" target="_blank">
+    <div class="container">
+      <img src="scifi_histogram.jpg" alt="SciFi_Histogram" style="width:100%">
           <div class="overlay">
-            <div class="text">
-              I was the lighting director for my college’s Fall production of “A Gentleman’s Guide to Love and Murder” and Spring production of "Almost Maine." I designed the light cues in the weeks leading up to the show, and then programmed the light board during tech week, and ran the light board during rehearsals and the performances.
-            </div> <!-- end of text div-->
+            <div class="text" style="margin-top: 3em;">
+              My project partner and I used Matlab to experiment with three different methods of classifying movie posters based off genre, specifically differentiating between Romance and Science Fiction movie posters. Our methods included simple cutoff based off average brightness of the image, using and Eigenfaces approach on an image matrix including color, and using linear regression on an image matrix including color. Click to see our github repository.
+            </div><!-- end of text div-->
           </div>
           <div class="text-block">
-            <h3>Lighting Director</h3>
-          </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <a href="Poster.pdf" target="_blank">
-  	<div class="container">
-    	<img src="Round1sq.jpg" alt="EMG" style="width:100%">
-          <div class="overlay">
-            <div class="text">
-              I worked in a group of three to make an Electromyogram for the Olin First-Year class Introduction to Sensors, Instrumentation, and Measurement. An electromyogram (EMG) is a device that measures electrical muscle activity. Our EMG consisted of a circuit to amplify and filter the signal from three electrodes placed on the skin. Click to see our poster.
-            </div> <!-- end of text div-->
-          </div>
-          <div class="text-block">
-            <h3>Electromyogram</h3>
+            <h3>Classifying Movie Posters</h3>
           </div>
     </div>
     </a>
+
   </div>
+</div>
 
 
   <div class="row">
@@ -101,23 +89,37 @@
       </a>
     </div>
 
-
-  <div class="row">
-    <!-- Aspect ratio for pictures should be square -->
     <div class="column">
-      <a href="https://github.com/davidt315/SkeeBallModSim/blob/master/Project3Draft7.ipynb" target="_blank">
+      <a href="Poster.pdf" target="_blank">
       <div class="container">
-        <img src="SkeeBallPicsq.JPG" alt="SkeeBallPic" style="width:100%">
+        <img src="Round1sq.jpg" alt="EMG" style="width:100%">
             <div class="overlay">
               <div class="text">
-                This is my final project for the Olin First-Year class called Modeling and Simulation of the Physical World. My partner and I chose to simulate a game of skee ball which includes human error. Our main question was, which ring should you aim for to maximize your points? Our model showed that aiming for the 40 ring actually earned the highest score on average, considering human error. Click for the our computational essay.
+                I worked in a group of three to make an Electromyogram for the Olin First-Year class Introduction to Sensors, Instrumentation, and Measurement. An electromyogram (EMG) is a device that measures electrical muscle activity. Our EMG consisted of a circuit to amplify and filter the signal from three electrodes placed on the skin. Click to see our poster.
               </div> <!-- end of text div-->
             </div>
             <div class="text-block">
-              <h3>Skee Ball Model</h3>
+              <h3>Electromyogram</h3>
             </div>
       </div>
       </a>
+    </div>
+
+
+    <!-- Aspect ratio for pictures should be square -->
+    <div class="column">
+      <div class="container">
+        <img src="Lights.jpg" alt="Lights" style="width:100%">
+            <div class="overlay">
+              <div class="text">
+                I was the lighting director for my college’s Fall production of “A Gentleman’s Guide to Love and Murder” and Spring production of "Almost Maine." I designed the light cues in the weeks leading up to the show, and then programmed the light board during tech week, and ran the light board during rehearsals and the performances.
+              </div> <!-- end of text div-->
+            </div>
+            <div class="text-block">
+              <h3>Lighting Director</h3>
+            </div>
+      </div>
+
     </div>
 
 
@@ -125,85 +127,6 @@
 </div>
 
 
-
-
-
-
 <body id="main" style=100%>
-
-<body onload="setBackground();">
-
-  <script>
-  var x = document.getElementById("main");
-
-  function setBackground() {
-    var userTime = new Date();
-    var hour = userTime.getHours();
-    var minute = userTime.getMinutes();
-    if (hour<=4 || hour>21) {
-      // nighttime DONE
-      x.style.background = "linear-gradient(0deg,#001538,#000000)";
-    }else if (hour==5) {
-      // 5 am DONE
-      x.style.background = "linear-gradient(0deg,#62492e,#252a3c,#15192c,#05050e)";
-    }else if (hour==6) {
-      // 6 am DONE
-      x.style.background = "linear-gradient(0deg,#8c4a5f,#827143,#526884,#18234f)";
-    }else if (hour==7) {
-      // 7 am DONE
-      x.style.background = "linear-gradient(0deg, #8c4a5f,#526884,#18234f)";
-    }else if (hour==8) {
-      // 8 am DONE
-      x.style.background = "linear-gradient(0deg, #000547, #8abbdb 75%)";
-    }else if (hour==9){
-      // 9 am DONE
-      x.style.background = "linear-gradient(0deg, #bdd8e3, #5782ae, #2a477e)";
-    }else if (hour>=10 && hour<=15) {
-      // 10 am - 3 pm DONE
-      x.style.background = "linear-gradient(0deg, #8ec2e5, #5782ae, #2a477e)";
-    }else if (hour==16) {
-      // 4pm is split DONE
-      if (minute<30){
-        // before 4:30 DONE
-        x.style.background = "linear-gradient(0deg, #bdd8e3, #5782ae, #2a477e)";
-      } else{
-        // after 4:30 DONE
-        x.style.background = "linear-gradient(0deg, #9a8d8d,#728ca4, #5782ae, #2a477e)";
-      }
-    }else if (hour==17) {
-      // 5 pm DONE
-      x.style.background = "linear-gradient(0deg,#9a8d8d,#b1b09b,#8d9ea0, #586d89, #3e4c6c)";
-    }else if (hour==18) {
-      // 6 pm is split DONE
-      if (minute<30){
-        // before 6:30 DONE
-        x.style.background = "linear-gradient(0deg,#8f4036,#f9bb73,#f1dab6,#aeb7c6,#6c82a7,#203865,#0a1335)";
-      } else{
-        // after 6:30 DONE
-        x.style.background = "linear-gradient(0deg,#964134,#f8d7ac,#92a4bc,#223566,#0b1536)";
-      }
-    }else if (hour==19) {
-      // 7 pm split DONE
-      if (minute<30){
-        // before 7:30 DONE
-        x.style.background = "linear-gradient(0deg,#8c3e22,#ad8760,#948975,#79818a,#4a5f82,#21325a,#090e28,#06091a)";
-      } else{
-        // after 7:30 DONE
-        x.style.background = "linear-gradient(0deg,#662714,#7c684d,#4c545e,#0f152c,#060610)";
-      }
-    }else if (hour==20) {
-      // 8 pm DONE
-      x.style.background = "linear-gradient(0deg,#6d231d,#723d27,#62492e,#252a3c,#15192c,#05050e)";
-    }else if (hour==21) {
-      // 9 pm DONE
-      x.style.background = "linear-gradient(0deg,#62492e,#252a3c,#15192c,#05050e,#010414)";
-    }else {
-      x.style.background = "darkblue";
-    }
-    setTimeout(setBackground, 6000);
-  }
-</script>
-
-
 
 </body>

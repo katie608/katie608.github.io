@@ -103,9 +103,11 @@ a {
 } */
 
 /* For small devices (e.g. smartphones) */
-.column {
-  width: 100%;
-  display: inline-block;
+@media (min-width: 400px) {
+  .column {
+    width: 100%;
+    display: inline-block;
+  }
 }
 /* For medium devices (e.g. tablets) */
 @media (min-width: 900px) {
