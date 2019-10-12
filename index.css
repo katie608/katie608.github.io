@@ -1,11 +1,11 @@
 /* Teal: #009faa */
 /* gray blue #444957 */
 /* light gray #eeeeee */
-/* #72292c */
+/* #797979 */
 
 :root {
   --header-color: #009faa;
-  --header-border-color: #C0B053;
+  --header-border-color: #797979;
 
 }
 
@@ -45,7 +45,9 @@ h1 {
   font-size: 6em;
   padding: 20px;
   padding-top: 60px;
+  padding-bottom: 10px;
   text-align: left;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -99,10 +101,31 @@ div.title {
   padding-bottom: 0.4em;
 }
 
+.img-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+}
+
+.img-container img {
+  width: 100%;
+  max-width: 100%;
+  height: 40%;
+  transition: all 0.3s;
+  display: block;
+  transform: scale(1);
+}
+
+.img-container:hover img {
+    transform: scale(1.05);
+}
+
 #footer {
   width: 100%;
   height: 2em;
-  background: linear-gradient(0deg, #444957 80%, var(--header-border-color) 80%, var(--header-border-color) 100%);
+  background: linear-gradient(0deg, #444957 80%, #C0B053 80%, #C0B053 100%);
   float: left;
   text-align: center;
   padding-top: 1em;
