@@ -8,23 +8,39 @@
 <body>
 
 
-  <div id="page1">
+  <div id="page1"> <!-- contains header and links -->
 
     <div id="headline">
       <h1>Katie Foster</h1>
       <h2>Computing Major at <a href="http://www.olin.edu/" style="text-decoration: none" target="_blank">Olin College of Engineering</a></h2>
     </div>
 
-    <div id="links-container">
-      <a href="https://www.linkedin.com/in/katherine-e-foster"><i class="fab fa-linkedin" title="Linkedin"></i></a>
-      <a href="https://github.com/katie608" title="Github"><i class="fab fa-github"></i></a>
-      <a href="https://docs.google.com/document/d/1BGLozp2rKDbhLzpJm6gQqL0aCK_6zczGDdR9KdrMRPc/edit?usp=sharing" title="Resume"><i class="fa fa-file-alt"></i></a>
-      <a href="mailto:kfoster@olin.edu" title="Email kfoster@olin.edu"><i class="fa fa-envelope"></i></a>
+<!-- Links to various social media sites and stuff -->
+    <div class="links-container">
+      <div class="link">
+        <a href="https://www.linkedin.com/in/katherine-e-foster">
+          <i class="fab fa-linkedin" title="Linkedin"></i>
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://github.com/katie608" title="Github">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://docs.google.com/document/d/1BGLozp2rKDbhLzpJm6gQqL0aCK_6zczGDdR9KdrMRPc/edit?usp=sharing" title="Resume">
+          <i class="fa fa-file-alt"></i>
+        </a>
+      </div>
+      <div class="link">
+        <a href="mailto:kfoster@olin.edu" title="Email kfoster@olin.edu"><i class="fa fa-envelope"></i>
+        </a>
+      </div>
     </div>
 
-  </div>
+  </div> <!--End page 1-->
 
-  <div id="page2">
+  <div id="page2"> <!-- contains projects -->
     <h3>Projects</h3>
 
     <div class="project-card">
@@ -52,15 +68,13 @@
   </div>
 
   <div class="project-card">
-    <div class="img-container">
-      <a href="https://github.com/sd19spring/InteractiveVisualization-katie_and_shreya" target="_blank">
-        <img src="InteractiveVisualization.jpg" alt="InteractiveVisualization"  height="400">
-      </a>
-    </div>
+    <a target="_blank" href="http://poe.olin.edu/2019/boomcrash/">
+      <img src="boomcrash.jpg" alt="music glove" width="600" height="400">
+    </a>
     <div class="desc">
-      <div class="title">Interactive Visualization</div>
-      My project partner and I designed a customizable interface for interactive art in pygame, where the user moves their mouse to draw shapes. The user can choose between several different types of shapes (circles, squares, triangles, bowties, hexagons), and different color palettes. The user can also change the size of the shapes, mirror their drawing, or animate the shapes to make them fall, scroll, scatter, or bounce. Click to see our github repository.
-    </div>
+      <div class="title">Musical Glove</div>
+        I worked on a team of five to make a glove that turns hand movements into music for the second-year class Principles of Engineering. I worked with electrical design, soldering, getting sensors to work, Arduino code, and bluetooth communication. I also made the website, which you can click on the picture to visit.
+      </div>
   </div>
 
   <div class="project-card">
@@ -72,6 +86,18 @@
     <div class="desc">
       <div class="title">Lighting Director</div>
       I was the lighting director for my college’s Fall production of “A Gentleman’s Guide to Love and Murder” and Spring production of "Almost Maine." I designed the light cues in the weeks leading up to the show, and then programmed the light board during tech week, and ran the light board during rehearsals and performances.
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="img-container">
+      <a href="https://github.com/sd19spring/InteractiveVisualization-katie_and_shreya" target="_blank">
+        <img src="InteractiveVisualization.jpg" alt="InteractiveVisualization"  height="400">
+      </a>
+    </div>
+    <div class="desc">
+      <div class="title">Interactive Visualization</div>
+      My project partner and I designed a customizable interface for interactive art in pygame, where the user moves their mouse to draw shapes. The user can choose between several different types of shapes (circles, squares, triangles, bowties, hexagons), and different color palettes. The user can also change the size of the shapes, mirror their drawing, or animate the shapes to make them fall, scroll, scatter, or bounce. Click to see our github repository.
     </div>
   </div>
 
@@ -111,20 +137,34 @@
     </div>
   </div>
 
+  <div class="project-card">
+    <a target="_blank" href="https://firestarss88.wixsite.com/fireflowers">
+      <img src="fireflowers.jpg" alt="graph of windowing" width="600" height="400">
+    </a>
+    <div class="desc">
+      <div class="title">Frequency Analysis of Poi Spinning</div>
+      As the last project in the class Quantitative Engineering Analysis, we used the Discrete Fourier Transform to analyze the frequency of poi spinning in real time, using an accelerometer and an Arduino Nano. We tried to create glow poi that changed color or flashed on frequency changes, but sadly Matlab cannot communicate both ways with a Serial port. 
+    </div>
+  </div>
+
+
+
 <!-- copy-paste this blank version to add a new card
   <div class="project-card">
     <a target="_blank" href="">
       <img src="" alt="" width="600" height="400">
     </a>
     <div class="desc">
+      <div class="title">Title</div>
       Add a description of the image here
     </div>
   </div>
 -->
 
-  </div>
+  </div> <!-- end page 2 -->
 
   <div id="page3">
+
 
     <div id="footer">
       <a href="https://www.linkedin.com/in/katherine-e-foster" title="Linkedin"><i class="fab fa-linkedin" style="color:white;"></i></a>
