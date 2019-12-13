@@ -2,6 +2,7 @@
 /* gray blue #444957 */
 /* light gray #eeeeee */
 /* #797979 */
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
 
 :root {
   --header-color: #009faa;
@@ -10,7 +11,7 @@
 }
 
 body {
-  font-family: arial;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #eeeeee;
 }
@@ -47,18 +48,20 @@ body {
 
 h1 {
   color: black;
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-size: 6em;
   padding: 20px;
   padding-top: 60px;
   padding-bottom: 10px;
   text-align: left;
   margin-bottom: 0;
+  font-weight: 400;
 }
 
 h2 {
   color: black;
-  font-family: "Verdana";
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 2em;
   padding: 20px;
   padding-top: 0px;
@@ -100,6 +103,7 @@ div.project-card img {
 div.desc {
   padding: 1em;
   text-align: left;
+  font-family: arial;
 }
 
 div.title {
