@@ -5,8 +5,8 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
 
 :root {
-  --header-color: #009faa;
-  --header-border-color: #797979;
+  --header-color: #808080;
+  --header-border-color: #185a81;
 
 }
 
@@ -17,12 +17,13 @@ body {
 }
 
 #page1 {
-    /* background-image: linear-gradient(-7deg, #eeeeee 30%,  #444957 31.2%, #009faa 31.4%); */
-    background-image: linear-gradient(-9deg, #eeeeee 30%,  var(--header-border-color) 30.1%, var(--header-border-color), 33.1%, var(--header-color) 33.2%);
+    /* background-image: linear-gradient(-9deg, #eeeeee 30%,  var(--header-border-color) 30.1%, var(--header-border-color), 33.1%, var(--header-color) 33.2%); */
+    background-image: linear-gradient(-4deg, #eeeeee 30%,  var(--header-border-color) 30.1%, var(--header-border-color), 33.1%, var(--header-color) 33.2%);
 
-    height: 100%;
-    min-height: 500px;
+    height: 60%;
+    min-height: 400px;
     width: 100%;
+    color: white;
 }
 
 #headline {
@@ -36,6 +37,7 @@ body {
   float: left;
   font-size: 4em;
   padding-top: 2.4em;
+  color: white;
 }
 
 .link { transition: all .2s ease-in-out; display: inline-block; }
@@ -82,7 +84,7 @@ h3 {
 div.project-card {
   background-color: white;
   width: 300px;
-  height: 550px;
+  height: 580px;
   margin: 2em;
   border-radius: 0.8em;
   box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
@@ -110,6 +112,18 @@ div.title {
   font-weight: bold;
   font-size: 1.2em;
   padding-bottom: 0.4em;
+}
+
+div.tag {
+  font-weight: bold;
+  color: white;
+  padding: 0.3em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  margin-top: 0.4em;
+  border-radius: 0.8em;
+  background-color: blue;
+  display:inline-block;
 }
 
 .img-container {
