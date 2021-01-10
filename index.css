@@ -85,6 +85,43 @@ body {
   width: 100%;
 }
 
+#page3 {
+  /* height: 600px; */
+  width: 100%;
+  float: left;
+  display:none;
+}
+
+
+
+.about {
+  width: 94%;
+  margin: auto;
+  align: center;
+  font-size: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-img {
+  /* flex-basis: 40%; */
+  border-radius: 50%;
+}
+.side-text {
+  padding-left: 2em;
+}
+
+.pg3-text {
+  width: 94%;
+  margin: auto;
+  align: center;
+  font-size: 1.6em;
+  padding-bottom: 4em;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
 h1 {
   color: black;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -184,9 +221,9 @@ div.tag {
     transform: scale(1.05);
 }
 
-#page3 {
+/* #footer_container {
   width: 100%;
-}
+} */
 
 #footer {
   width: 100%;
