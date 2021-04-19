@@ -16,7 +16,7 @@ body {
   background-color: #eeeeee;
 }
 
-#page1 {
+#header_page {
     /* background-image: linear-gradient(-9deg, #eeeeee 30%,  var(--header-border-color) 30.1%, var(--header-border-color), 33.1%, var(--header-color) 33.2%); */
     background-image: linear-gradient(-4deg, #eeeeee 30%,  var(--header-border-color) 30.1%, var(--header-border-color), 33.1%, var(--header-color) 33.2%);
 
@@ -80,23 +80,57 @@ body {
   visibility: visible;
 }
 
-#page2 {
+.tabs-container {
+  width: 100%;
+  /* background-color: #808080; */
+}
+.tablink {
+  font-size: 3em;
+  padding: 0.4em;
+  text-align: left;
+  border-radius: 0px;
+  /* border: none; */
+  /* border-color: #808080; */
+  /* background-color: #808080; */
+}
+/* .tablink :focus {border: none;}
+.tablink :active {border: none;} */
+
+.selected {
+  color: #185a81;
+  border-bottom: none;
+  border-radius: 0px;
+}
+
+#project_page {
   height: 600px;
-  width: 100%;
+  /* width: 100%; */
 }
-
-#page3 {
-  /* height: 600px; */
-  width: 100%;
+#about_page {
+  /* width: 100%; */
   float: left;
-  display:none;
+  padding-top: 6em;
+  /* display:none; */
+}
+#education_page {
+  padding-top: 4em;
+  /* width: 100%; */
+  float: left;
+}
+#experiences_page {
+  padding-top: 4em;
+  /* width: 100%; */
+  float: left;
 }
 
-
+.page {
+  width: 100%;
+}
 
 .about {
   width: 94%;
   margin: auto;
+  margin-bottom: 4em;
   align: center;
   font-size: 1.6em;
   display: flex;

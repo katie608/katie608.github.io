@@ -1,14 +1,15 @@
-
 <head>
-<title>Katie Foster</title>
-<link rel="icon" href="images/Favicon.JPG" type="image" sizes="16x16">
-<link rel="stylesheet" type="text/css" href="index.css"/>
-<script src="https://kit.fontawesome.com/b996e477b6.js" crossorigin="anonymous"></script>
+  <!--  -->
+  <script src="https://kit.fontawesome.com/b996e477b6.js" crossorigin="anonymous"></script>
+  <!--  -->
+  <title>Katie Foster</title>
+  <link rel="icon" href="images/favicon.jpg" type="image" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 <body>
 
 
-  <div id="page1">
+  <div id="header_page">
     <!-- contains header and links -->
 
     <div id="headline">
@@ -53,10 +54,16 @@
 
 
   </div>
-  <!-- End page 1 -->
+  <!-- End header_page -->
 
-  <div id="page2">  <!-- contains projects -->
-    <h3>Projects</h3>
+  <div class="tabs-container">
+    <button class="tablink selected" onclick="openTab(event,'project_page')">Projects</button>
+    <button class="tablink" onclick="openTab(event,'about_page')">About</button>
+    <button class="tablink" onclick="openTab(event,'education_page')">Education</button>
+    <button class="tablink" onclick="openTab(event,'experiences_page')">Experience</button>
+  </div>
+
+  <div id="project_page" class="page">
 
     <div class="project-card">
       <div class="img-container">
@@ -220,7 +227,6 @@
     </div>
   </div>
 
-
   <div class="project-card">
     <div class="img-container">
       <a   href="https://firestarss88.wixsite.com/fireflowers">
@@ -234,7 +240,6 @@
       <div class="tag" style="background-color: #d19d43">Matlab</div>
     </div>
   </div>
-
 
   <div class="project-card">
     <div class="img-container">
@@ -266,7 +271,6 @@
 
   </div>
 
-
 <!-- copy-paste this blank version to add a new card
   <div class="project-card">
     <div class="img-container">
@@ -282,12 +286,10 @@
     </div>
   </div>
 -->
+  </div> <!-- end project_page -->
 
-  </div> <!-- end page 2 -->
 
-
-  <div id="page3">  <!-- contains projects -->
-    <h3>About</h3>
+  <div id="about_page" class="page" style="display:none">
     <div class="about">
       <!-- TODO: get these to stack responsively -->
       <div class="profile-img">
@@ -297,8 +299,9 @@
         <p>I am an Engineering with Computing Major at Olin College of Engineering. In the past, I have worked with Python, Visualization, and Web Development. I am looking for opportunities to try new things within the field of Software Engineering</p>
       </div>
     </div>
+  </div> <!-- end about_page -->
 
-    <h3>Education</h3>
+  <div id="education_page" class="page" style="display:none">
     <div class="pg3-text">
       <strong>Olin College of Engineering</strong>
       <p>Bachelor of Science in Engineering with Computing</p>
@@ -311,9 +314,16 @@
         </li>
       </ul>
     </div>
+  </div> <!-- end education_page -->
 
-    <h3>Experience</h3>
+  <div id="experiences_page" class="page" style="display:none">
     <div class="pg3-text">
+      <!-- <p><b>Company </b></p>
+      <span style="padding-left: 2em;"><b>Title, </b>Location</span> <span style="float: right; padding-right: 4em;">Date</span>
+      <p style="padding-left: 4em;">desc</p> -->
+      <p><b>Olin College of Engineering</b></p>
+      <span style="padding-left: 2em;"><b>Course Assistant, </b>Needham, MA</span> <span style="float: right; padding-right: 4em;">Spring 2021</span>
+      <p style="padding-left: 4em;">Host hours to answer student questions about course content, assist with grading and course development for the courses Data Structures & Algorithms and Neurotechnology.</p>
       <p><b>The Aerospace Corporation, </b>Visualization and Immersive Technologies Department</p>
       <span style="padding-left: 2em;"><b>Technical Intern III, </b>Remote due to COVID-19</span> <span style="float: right; padding-right: 4em;">June-August 2020</span>
       <p style="padding-left: 4em;">Worked on NeoForce, a platform for training space operators by using a multi-player video game environment built in Unity. Led visualization for a project to create a mission plan for capturing a sample from an interstellar object and returning it to earth. </p>
@@ -323,7 +333,7 @@
       <p></p>
       <p></p>
     </div>
-  </div> <!-- end page 3 -->
+  </div> <!-- end experiences_page -->
 
   <!-- <div id="footer_container"> -->
     <div id="footer">
@@ -340,5 +350,21 @@
       </div>
     </div>
   <!-- </div> -->
+
+  <script>
+  function openTab(evt, tabName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("page");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" selected", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " selected";
+  }
+  </script>
 
 </body>
